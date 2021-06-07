@@ -5,6 +5,7 @@ ENTITY eightBitAdder IS
 	PORT ( 		i_x		: IN STD_LOGIC_VECTOR(7 downto 0);
 			i_y		: IN STD_LOGIC_VECTOR(7 downto 0);
 			i_cin		: IN STD_LOGIC;
+			o_cout		: OUT STD_LOGIC;
 			o_s		: OUT STD_LOGIC_VECTOR(7 downto 0));
 END eightBitAdder;
 
@@ -26,7 +27,7 @@ adder7: oneBitFullAdder
 	PORT MAP ( 	i_x => i_x(7),
 			i_y => i_y(7),
 			i_cin => int_c(6),
-			o_cout => int_c(7),
+			o_cout => o_cout,
 			o_s => o_s(7));
 
 adder6: oneBitFullAdder

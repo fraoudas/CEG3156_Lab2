@@ -1,8 +1,5 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-LIBRARY lpm;
-USE lpm.lpm_components.all;
-
 
 ENTITY singleCycleProc IS
 	PORT (
