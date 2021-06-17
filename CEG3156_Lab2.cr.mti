@@ -1,12 +1,4 @@
-D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\enasdFF.vhd}
-Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity enasdFF
--- Compiling architecture rtl of enasdFF
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
+D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,7 +6,15 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling entity oneBitFullAdder
 -- Compiling architecture struct of oneBitFullAdder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBit2x1MUX.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registerFile
+-- Compiling architecture rtl of registerFile
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -22,23 +22,15 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling entity eightBit2x1MUX
 -- Compiling architecture struct of eightBit2x1MUX
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitRegister.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity eightBitRegister
--- Compiling architecture rtl of eightBitRegister
+-- Compiling entity eightBitDecoder
+-- Compiling architecture struct of eightBitDecoder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBit8x3MUX.vhd}
-Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity eightBit8x3MUX
--- Compiling architecture struct of eightBit8x3MUX
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\enardFF.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -46,22 +38,87 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling entity enARdFF
 -- Compiling architecture rtl of enARdFF
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/singleCycleProc.vhd {0 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitALU.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitALU.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+** Error (suppressible): D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitALU.vhd(2): (vcom-1491) Empty source files.
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/dataMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\dataMemory.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity singleCycleProc
--- Compiling architecture rtl of singleCycleProc
-** Error: D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd(28): (vcom-1136) Unknown identifier "L_ROM".
-** Error: D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd(45): near "END": (vcom-1576) expecting BEGIN.
+-- Loading package LPM_COMPONENTS
+-- Compiling entity dataMemory
+-- Compiling architecture struct of dataMemory
 
-} {8.0 10.0} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitDecoder.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity eightBitDecoder
--- Compiling architecture struct of eightBitDecoder
+-- Compiling entity aluControl
+-- Compiling architecture struct of aluControl
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eightBit8x3MUX
+-- Compiling architecture struct of eightBit8x3MUX
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eightBitRegister
+-- Compiling architecture rtl of eightBitRegister
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity enasdFF
+-- Compiling architecture rtl of enasdFF
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eightBitComparator
+-- Compiling architecture rtl of eightBitComparator
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eightBitAdder
+-- Compiling architecture struct of eightBitAdder
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/controlUnit.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/controlUnit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+** Error (suppressible): D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/controlUnit.vhd(2): (vcom-1491) Empty source files.
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity oneBitComparator
+-- Compiling architecture rtl of oneBitComparator
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluUnit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluUnit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity aluUnit
+-- Compiling architecture struct of aluUnit
 
 } {} {}}
