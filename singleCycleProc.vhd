@@ -31,7 +31,21 @@ COMPONENT eightBit8x3MUX
 		o_q						: OUT	STD_LOGIC_VECTOR(7 downto 0));
 END COMPONENT;
 
-SIGNAL int_PC : STD_LOGIC_VECTOR(7 downto 0);
+COMPONENT eightBitRegsiter
+	PORT (
+		i_gReset, i_clock 	: IN  STD_LOGIC;
+		i_A 			: IN  STD_LOGIC_VECTOR(7 downto 0);
+		o_q 			: OUT STD_LOGIC_VECTOR(7 downto 0));
+END COMPONENT;
+
+COMPONENT instructionMemory
+	PORT (
+		i_inclock, i_outclock 	: IN  STD_LOGIC;
+		i_addr 			: IN  STD_LOGIC_VECTOR(7 downto 0);
+		o_q 			: OUT STD_LOGIC_VECTOR(31 downto 0));
+END COMPONENT;
+		
+SIGNAL int_PCin, int_PCout : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_readData1, int_readData2 : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_writeData : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_regDst, int_jump, int_memRead, int_memToReg, int_aluSrc : STD_LOGIC;
@@ -39,6 +53,10 @@ SIGNAL int_aluOp : STD_LOGIC_VECTOR(2 downto 0);
 
 SIGNAL int_aluRes : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_muxOther : STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL int_instruction : STD_LOGIC_VECTOR(31 downto 0);
+
+SIGNAL int_PCCout : STD_LOGIC;
+SIGNAL int_PCnext : STD_LOGIC_VECTOR(7 downto 0);
 
 BEGIN
 	
@@ -54,5 +72,25 @@ ioMUX: eightBit8x3MUX
 			i_A5 => int_muxOther,
 			i_A6 => int_muxOther,
 			i_A7 => int_muxOther);
+
+PC: eightBitRegister
+	PORT MAP (	i_gReset => GReset,
+			i_clock => GClock,
+			i_A => int_PCin,
+			o_q => int_PCout);
+
+PCAdder: eightBitAdder
+	PORT MAP (	i_x => int_PCout,
+			i_y => "00000100",
+			i_cin => '0',
+			o_cout => int_PCCout,
+			o_s => int_PCnext);
+			
+
+instructionMem: instructionMemory
+	PORT MAP (	i_inclock => CLOCK_50,
+			i_outclock => CLOCK2_50,
+			i_addr => int_PCout,
+			o_q => int_instruction);
 
 END rtl;

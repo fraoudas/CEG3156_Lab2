@@ -38,12 +38,14 @@ SIGNAL int_cout : STD_LOGIC;
 SIGNAL int_notB : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_q : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_A3, int_A4, int_A5 : STD_LOGIC_VECTOR(7 downto 0);
+
 BEGIN
 int_notB <= NOT(i_B);
 
 int_AND <= i_A AND i_B;
 int_OR <= i_A OR i_B;
 
+int_SLT(7 downto 1) <= "0000000";
 adder: eightBitAdder
 	PORT MAP (	i_x => i_A,
 			i_y => i_B,
@@ -73,5 +75,8 @@ mux: eightBit8x3MUX
 			i_A6 => int_SUB,
 			i_A7 => int_SLT,
 			o_q => int_q);
+	--Output driver
+	o_zero <= '1' WHEN int_q = "00000000" ELSE '0';
+	o_q <= int_q;
 
 END struct;

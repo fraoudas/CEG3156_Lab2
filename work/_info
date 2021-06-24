@@ -43,29 +43,29 @@ Ealucontrol
 Z4 w1622832103
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 37
+!i122 97
 Z7 dD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2
-Z8 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd
-Z9 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd
+Z8 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluControl.vhd
+Z9 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluControl.vhd
 l0
 L4 1
 V65cB3oc>hdHZYd39VOEl`3
 !s100 F_l5LaD^nWaPX8>V[e?QX2
-Z10 OL;C;2020.4;71
+Z10 OV;C;2021.1;73
 32
-Z11 !s110 1623939123
+Z11 !s110 1624032474
 !i10b 1
-Z12 !s108 1623939123.000000
-Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd|
-Z14 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd|
-!i113 0
+Z12 !s108 1624032474.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluControl.vhd|
+Z14 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluControl.vhd|
+!i113 1
 Z15 o-work work -2002 -explicit
 Z16 tExplicit 1 CvgOpt 0
 Astruct
 R5
 R6
 DEx4 work 10 alucontrol 0 22 65cB3oc>hdHZYd39VOEl`3
-!i122 37
+!i122 97
 l12
 L11 3
 VEQgm=5d;P2U45cDIZ>]6T1
@@ -77,112 +77,112 @@ R11
 R12
 R13
 R14
-!i113 0
+!i113 1
 R15
 R16
 Ealuunit
-Z17 w1623077591
+Z17 w1624032328
 R5
 R6
-!i122 41
+!i122 68
 R7
-Z18 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluUnit.vhd
-Z19 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluUnit.vhd
+Z18 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluUnit.vhd
+Z19 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluUnit.vhd
 l0
 L4 1
 VO_P8L8edKn16=:[LOSPR70
 !s100 oNc;^NRk^olL1:IGiZ>7S2
 R10
 32
-R11
+Z20 !s110 1624032362
 !i10b 1
-R12
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluUnit.vhd|
-Z21 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluUnit.vhd|
-!i113 0
+Z21 !s108 1624032362.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluUnit.vhd|
+Z23 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluUnit.vhd|
+!i113 1
 R15
 R16
 Astruct
 R5
 R6
 DEx4 work 7 aluunit 0 22 O_P8L8edKn16=:[LOSPR70
-!i122 41
+!i122 68
 l42
-L12 67
-VP=Z0_bR9A?E4Gcgg5UADi0
-!s100 [_BUONg]k9:5cieQod^d12
+Z24 L12 72
+V1lLGIAFFZ_Y^5H4T6Y0GP1
+!s100 FmANRz7KekbO6J1QOJ7N92
 R10
 32
-R11
-!i10b 1
-R12
 R20
+!i10b 1
 R21
-!i113 0
+R22
+R23
+!i113 1
 R15
 R16
 Edatamemory
-Z22 w1623944285
-Z23 DPx3 lpm 14 lpm_components 0 22 FLLzVz2e8:f@fG]9=fY343
+Z25 w1623944285
+Z26 DPx3 lpm 14 lpm_components 0 22 FLLzVz2e8:f@fG]9=fY343
 R5
 R6
-!i122 56
+!i122 104
 R7
-Z24 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\dataMemory.vhd
-Z25 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\dataMemory.vhd
+Z27 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/dataMemory.vhd
+Z28 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/dataMemory.vhd
 l0
 L7 1
 VAM[R]NX[BHI6a>SP]Cegn2
 !s100 YYklV8DTUg7fZJXVYGDSA2
-Z26 OV;C;2021.1;73
+R10
 32
-Z27 !s110 1623944287
+Z29 !s110 1624032475
 !i10b 1
-Z28 !s108 1623944287.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\dataMemory.vhd|
-!s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\dataMemory.vhd|
+Z30 !s108 1624032475.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/dataMemory.vhd|
+Z32 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/dataMemory.vhd|
 !i113 1
 R15
 R16
 Astruct
-R23
+R26
 R5
 R6
-DEx4 work 10 datamemory 0 22 AM[R]NX[BHI6a>SP]Cegn2
-!i122 56
+Z33 DEx4 work 10 datamemory 0 22 AM[R]NX[BHI6a>SP]Cegn2
+!i122 104
 l42
-L15 45
-V>h_BVf7hE3bzQWoYAo2k83
-!s100 gf?KkV=cA4V:<oAPzFe9G0
-R26
+Z34 L15 45
+Z35 V>h_BVf7hE3bzQWoYAo2k83
+Z36 !s100 gf?KkV=cA4V:<oAPzFe9G0
+R10
 32
-R27
-!i10b 1
-R28
 R29
-Z30 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\dataMemory.vhd|
+!i10b 1
+R30
+R31
+R32
 !i113 1
 R15
 R16
 Edatapath
-Z31 w1623336107
+Z37 w1623336107
 R5
 R6
 !i122 29
 R7
-Z32 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd
-Z33 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd
+Z38 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd
+Z39 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd
 l0
 L4 1
 VVTIf]<icU^;jJh0J@D0mF1
 !s100 cM4A16ZjV:;LE_CDa1[X>3
-R10
+Z40 OL;C;2020.4;71
 32
-Z34 !s110 1623336109
+Z41 !s110 1623336109
 !i10b 1
-Z35 !s108 1623336109.000000
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd|
-Z37 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd|
+Z42 !s108 1623336109.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd|
+Z44 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\midterm.vhd|
 !i113 0
 R15
 R16
@@ -195,24 +195,24 @@ l48
 L10 79
 V6]g[moG`Y69_D4gLU`TN`0
 !s100 40mlgPf?g:8Dg1BNT<9T=3
-R10
+R40
 32
-R34
+R41
 !i10b 1
-R35
-R36
-R37
+R42
+R43
+R44
 !i113 0
 R15
 R16
 Eeightbit2x1mux
-Z38 w1622830659
+Z45 w1622830659
 R5
 R6
-!i122 35
+!i122 95
 R7
-Z39 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd
-Z40 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd
+Z46 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd
+Z47 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd
 l0
 L4 1
 V1ed7h6VVH0FM:g56:ic2c0
@@ -222,16 +222,16 @@ R10
 R11
 !i10b 1
 R12
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd|
-Z42 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd|
-!i113 0
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd|
+Z49 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit2x1MUX.vhd|
+!i113 1
 R15
 R16
 Astruct
 R5
 R6
 DEx4 work 14 eightbit2x1mux 0 22 1ed7h6VVH0FM:g56:ic2c0
-!i122 35
+!i122 95
 l14
 L12 9
 VFfZz]?V6bjKgzM;M1UQS71
@@ -241,79 +241,79 @@ R10
 R11
 !i10b 1
 R12
-R41
-R42
-!i113 0
+R48
+R49
+!i113 1
 R15
 R16
 Eeightbit8x3mux
-Z43 w1622941855
+Z50 w1622941855
 R5
 R6
-!i122 40
+!i122 100
 R7
-Z44 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
-Z45 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
+Z51 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
+Z52 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
 l0
 L4 1
 V=hAbe<Hh_<ZgA_FX=lR;C1
 !s100 Q:kCL6aYRCkABhG:LU:?Y0
 R10
 32
-R11
+R29
 !i10b 1
-R12
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd|
-Z47 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd|
-!i113 0
+R30
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd|
+Z54 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd|
+!i113 1
 R15
 R16
 Astruct
 R5
 R6
 DEx4 work 14 eightbit8x3mux 0 22 =hAbe<Hh_<ZgA_FX=lR;C1
-!i122 40
+!i122 100
 l16
 L12 21
 VZ]MehS5EN9@gKbKBPjdKj0
 !s100 BM8=R^FQ?<ZeSoi9zN]gU3
 R10
 32
-R11
+R29
 !i10b 1
-R12
-R46
-R47
-!i113 0
+R30
+R53
+R54
+!i113 1
 R15
 R16
 Eeightbitadder
-Z48 w1623076815
+Z55 w1623076815
 R5
 R6
-!i122 31
+!i122 90
 R7
-Z49 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd
-Z50 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd
+Z56 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd
+Z57 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd
 l0
 L4 1
 V2U^5[m8P80K7P2UlbPb[m3
 !s100 nF]4fmF8:5NKo5@zaDCbg1
 R10
 32
-!s110 1623939122
+R11
 !i10b 1
-Z51 !s108 1623939122.000000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd|
-Z53 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd|
-!i113 0
+R12
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd|
+Z59 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd|
+!i113 1
 R15
 R16
 Astruct
 R5
 R6
 DEx4 work 13 eightbitadder 0 22 2U^5[m8P80K7P2UlbPb[m3
-!i122 31
+!i122 90
 l25
 L12 70
 VEZaD;S;^dVlI5Ka9:kcbh1
@@ -322,61 +322,102 @@ R10
 32
 R11
 !i10b 1
-R51
-R52
-R53
-!i113 0
+R12
+R58
+R59
+!i113 1
+R15
+R16
+Eeightbitalu
+Z60 w1624032444
+R5
+R6
+!i122 94
+R7
+Z61 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitALU.vhd
+Z62 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitALU.vhd
+l0
+L4 1
+V;YhKliMT4PL7eI@bH3IGW3
+!s100 ;>dP1MBS=jTJ9_DzX0zmZ3
+R10
+32
+R11
+!i10b 1
+R12
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitALU.vhd|
+Z64 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitALU.vhd|
+!i113 1
+R15
+R16
+Astruct
+R5
+R6
+DEx4 work 11 eightbitalu 0 22 ;YhKliMT4PL7eI@bH3IGW3
+!i122 94
+l42
+R24
+VU]>AMGZ8LY[JmcPfY;6h51
+!s100 2aoZ;FC8V8bbc`OAYQXkW1
+R10
+32
+R11
+!i10b 1
+R12
+R63
+R64
+!i113 1
 R15
 R16
 Eeightbitcomparator
-Z54 w1623077246
+Z65 w1623077246
 R5
 R6
-!i122 42
+!i122 101
 R7
-Z55 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd
-Z56 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd
+Z66 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitComparator.vhd
+Z67 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitComparator.vhd
 l0
 L4 1
 VDd6b89<DVO:8o6U2kdSL61
 !s100 l[DIXg_P9:a2QMChi4SXR1
 R10
 32
-Z57 !s110 1623939124
+R29
 !i10b 1
-R12
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd|
-Z59 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd|
-!i113 0
+R30
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitComparator.vhd|
+Z69 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitComparator.vhd|
+!i113 1
 R15
 R16
 Artl
 R5
 R6
 DEx4 work 18 eightbitcomparator 0 22 Dd6b89<DVO:8o6U2kdSL61
-!i122 42
+!i122 101
 l21
 L10 84
 VGI4_k^c8CiRNVezXFV9<n0
 !s100 ?]Q55`7HAFBbnk<<RkXWA1
 R10
 32
-R57
+R29
 !i10b 1
-R12
-R58
-R59
-!i113 0
+R30
+R68
+R69
+!i113 1
 R15
 R16
 Eeightbitdecoder
-Z60 w1622940984
+Z70 w1622940984
 R5
 R6
-!i122 39
+!i122 99
 R7
-Z61 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd
-Z62 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd
+Z71 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd
+Z72 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd
 l0
 L4 1
 VF:>oYLZcDT7eT;mPOB2^E0
@@ -386,16 +427,16 @@ R10
 R11
 !i10b 1
 R12
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd|
-Z64 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd|
-!i113 0
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd|
+Z74 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitDecoder.vhd|
+!i113 1
 R15
 R16
 Astruct
 R5
 R6
 DEx4 work 15 eightbitdecoder 0 22 F:>oYLZcDT7eT;mPOB2^E0
-!i122 39
+!i122 99
 l14
 L10 19
 VRd3EdQBGMk0k6f@hXW@DS3
@@ -405,19 +446,19 @@ R10
 R11
 !i10b 1
 R12
-R63
-R64
-!i113 0
+R73
+R74
+!i113 1
 R15
 R16
 Eeightbitregister
-Z65 w1622833214
+Z75 w1622833214
 R5
 R6
-!i122 38
+!i122 98
 R7
-Z66 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd
-Z67 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd
+Z76 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd
+Z77 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd
 l0
 L4 1
 VhTS4Ui4nGkGgSMBD?XH<h3
@@ -427,16 +468,16 @@ R10
 R11
 !i10b 1
 R12
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd|
-Z69 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd|
-!i113 0
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd|
+Z79 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd|
+!i113 1
 R15
 R16
 Artl
 R5
 R6
 DEx4 work 16 eightbitregister 0 22 hTS4Ui4nGkGgSMBD?XH<h3
-!i122 38
+!i122 98
 l24
 L11 75
 Vi<WY@Q]dbA>VD`6TBS87F0
@@ -446,19 +487,19 @@ R10
 R11
 !i10b 1
 R12
-R68
-R69
-!i113 0
+R78
+R79
+!i113 1
 R15
 R16
 Eenardff
-Z70 w1622830458
+Z80 w1622830458
 R5
 R6
-!i122 33
+!i122 92
 R7
-Z71 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd
-Z72 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd
+Z81 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd
+Z82 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd
 l0
 L4 1
 Vkn=NWP5;`L@iMhLmfTPa:0
@@ -468,18 +509,18 @@ R10
 R11
 !i10b 1
 R12
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd|
-Z74 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd|
-!i113 0
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd|
+Z84 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd|
+!i113 1
 R15
 R16
 Artl
 R5
 R6
 DEx4 work 7 enardff 0 22 kn=NWP5;`L@iMhLmfTPa:0
-!i122 33
+!i122 92
 l16
-Z75 L13 23
+Z85 L13 23
 VAb:dz2NEEJa3:KHbdOGhb2
 !s100 l;HWL6CaidkSLmG0I_a7E0
 R10
@@ -487,19 +528,19 @@ R10
 R11
 !i10b 1
 R12
-R73
-R74
-!i113 0
+R83
+R84
+!i113 1
 R15
 R16
 Eenasdff
-Z76 w1622830477
+Z86 w1622830477
 R5
 R6
-!i122 32
+!i122 91
 R7
-Z77 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd
-Z78 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd
+Z87 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd
+Z88 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd
 l0
 L4 1
 Vi?o:iY8goilUgbcYPEFdC3
@@ -509,18 +550,18 @@ R10
 R11
 !i10b 1
 R12
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd|
-Z80 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd|
-!i113 0
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd|
+Z90 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd|
+!i113 1
 R15
 R16
 Artl
 R5
 R6
 DEx4 work 7 enasdff 0 22 i?o:iY8goilUgbcYPEFdC3
-!i122 32
+!i122 91
 l15
-R75
+R85
 V`G;80zD;@8=>JO@J7VB=G2
 !s100 Ug2hdnagokM1[:M>QN2mR1
 R10
@@ -528,103 +569,103 @@ R10
 R11
 !i10b 1
 R12
-R79
-R80
-!i113 0
+R89
+R90
+!i113 1
 R15
 R16
 Einstructionmemory
-Z81 w1623943101
-R23
+Z91 w1623944057
+R26
 R5
 R6
-!i122 54
+!i122 103
 R7
-Z82 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\instructionMemory.vhd
-Z83 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\instructionMemory.vhd
+Z92 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instructionMemory.vhd
+Z93 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instructionMemory.vhd
 l0
 L7 1
 VKACEcm2RIXj0zJ0NB5OQf1
 !s100 4@]B8Nc=GZB[aO;0_FmLo2
-R26
+R10
 32
-Z84 !s110 1623943105
+R29
 !i10b 1
-Z85 !s108 1623943105.000000
-Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\instructionMemory.vhd|
-Z87 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\instructionMemory.vhd|
+R30
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instructionMemory.vhd|
+Z95 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instructionMemory.vhd|
 !i113 1
 R15
 R16
 Astruct
-R23
+R26
 R5
 R6
 DEx4 work 17 instructionmemory 0 22 KACEcm2RIXj0zJ0NB5OQf1
-!i122 54
+!i122 103
 l38
-L13 43
-Va=C;IjXmbQJ8ML^igz7GC2
-!s100 YAnMJ^NgY_5<LgPLof=WI2
-R26
+L13 42
+VQdnII<KKJH5L0l8ZC]2ZN1
+!s100 o4WNSl9_EbjBLYHgGjNf00
+R10
 32
-R84
+R29
 !i10b 1
-R85
-R86
-R87
+R30
+R94
+R95
 !i113 1
 R15
 R16
 Eonebitcomparator
-Z88 w1621005341
+Z96 w1621005341
 R5
 R6
-!i122 43
+!i122 102
 R7
-Z89 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd
-Z90 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd
+Z97 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd
+Z98 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd
 l0
 L4 1
 VSLGbV:WJ5B<_zQQ[^LY1V3
 !s100 M6Y9?i0z0bJ`5D7gXfC100
 R10
 32
-R57
+R29
 !i10b 1
-Z91 !s108 1623939124.000000
-Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd|
-Z93 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd|
-!i113 0
+R30
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd|
+Z100 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd|
+!i113 1
 R15
 R16
 Artl
 R5
 R6
 DEx4 work 16 onebitcomparator 0 22 SLGbV:WJ5B<_zQQ[^LY1V3
-!i122 43
+!i122 102
 l14
 L11 13
 VD:2^mlW`ALB9mYg7NEhN<0
 !s100 aBIHlabL[Ko1iH]EX[bNY2
 R10
 32
-R57
+R29
 !i10b 1
-R91
-R92
-R93
-!i113 0
+R30
+R99
+R100
+!i113 1
 R15
 R16
 Eonebitfulladder
-Z94 w1603056180
+Z101 w1603056180
 R5
 R6
-!i122 36
+!i122 96
 R7
-Z95 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
-Z96 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
+Z102 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
+Z103 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
 l0
 L12 1
 V6L7bBdEcG?56AgM3E^@b_2
@@ -634,16 +675,16 @@ R10
 R11
 !i10b 1
 R12
-Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd|
-Z98 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd|
-!i113 0
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd|
+Z105 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd|
+!i113 1
 R15
 R16
 Astruct
 R5
 R6
 DEx4 work 15 onebitfulladder 0 22 6L7bBdEcG?56AgM3E^@b_2
-!i122 36
+!i122 96
 l25
 L20 15
 V=Rf5U9hlkT_?:`XS5Hoh00
@@ -653,19 +694,19 @@ R10
 R11
 !i10b 1
 R12
-R97
-R98
-!i113 0
+R104
+R105
+!i113 1
 R15
 R16
 Eregisterfile
-Z99 w1622944047
+Z106 w1622944047
 R5
 R6
-!i122 34
+!i122 93
 R7
-Z100 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd
-Z101 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd
+Z107 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd
+Z108 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd
 l0
 L4 1
 Vi2=VUPBPd;]i`R?`Iznn20
@@ -675,16 +716,16 @@ R10
 R11
 !i10b 1
 R12
-Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd|
-Z103 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd|
-!i113 0
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd|
+Z110 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd|
+!i113 1
 R15
 R16
 Artl
 R5
 R6
 DEx4 work 12 registerfile 0 22 i2=VUPBPd;]i`R?`Iznn20
-!i122 34
+!i122 93
 l44
 L16 114
 V96Yk3H4WlH3997A<67P<V3
@@ -694,51 +735,51 @@ R10
 R11
 !i10b 1
 R12
-R102
-R103
-!i113 0
+R109
+R110
+!i113 1
 R15
 R16
 Esinglecycleproc
-Z104 w1623941889
-R23
+Z111 w1623944466
+R26
 R5
 R6
-!i122 53
+!i122 89
 R7
-Z105 8D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd
-Z106 FD:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd
+Z112 8D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/singleCycleProc.vhd
+Z113 FD:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/singleCycleProc.vhd
 l0
 L7 1
 VZojHOPIYe^gCAJXXXJAU20
 !s100 9?GRlGa]@B@Jf_n1j2IQG1
-R26
+R10
 32
-Z107 !s110 1623941892
+R11
 !i10b 1
-Z108 !s108 1623941892.000000
-Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd|
-Z110 !s107 D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\singleCycleProc.vhd|
+R12
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/singleCycleProc.vhd|
+Z115 !s107 D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/singleCycleProc.vhd|
 !i113 1
 R15
 R16
 Artl
-R23
+R26
 R5
 R6
 DEx4 work 15 singlecycleproc 0 22 ZojHOPIYe^gCAJXXXJAU20
-!i122 53
-l63
-L16 63
-Vhb?d1Zz9e99SC6X;F<c9E0
-!s100 RL:CX6YL2:a4m0jmBS?7S0
-R26
+!i122 89
+l43
+L16 43
+VN2:iB:eh0M4;L63YIS6O83
+!s100 dVM=B[b@^>aJM^gOFdKLS3
+R10
 32
-R107
+R11
 !i10b 1
-R108
-R109
-R110
+R12
+R114
+R115
 !i113 1
 R15
 R16
