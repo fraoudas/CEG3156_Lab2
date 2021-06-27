@@ -13,8 +13,10 @@ ARCHITECTURE struct OF aluControl IS
 
 BEGIN
 
-aluControl_Behaviour : process is  
-  BEGIN
+PROCESS(i_aluOp)
+BEGIN
+	
+
   if i_aluOp = "00" then   -- add function lw
      o_control <= "010";
 	 
@@ -22,26 +24,24 @@ aluControl_Behaviour : process is
      o_control <= "110";
 	 
   elsif i_aluOp = "10" then -- r-type insturction 
-     if i_func = "100000"  then -- add function
+     if i_func(3 downto 0) = "0000"  then -- add function
 	 o_control <= "010";
 	 
-	 elsif i_func = "100010" then -- subtract function 
+	 elsif i_func(3 downto 0) = "0010" then -- subtract function 
 	 o_control <= "110";
 	 
-	 elsif i_func = "100100" then  -- and function
+	 elsif i_func(3 downto 0) = "0100" then  -- and function
 	 o_control <= "000";
 	 
-	 elsif i_func = "100101" then -- or function
+	 elsif i_func(3 downto 0) = "0101" then -- or function
 	 o_control <= "001";
 	 
-	 elsif i_func = "10101" then -- slt function
+	 elsif i_func(3 downto 0) = "1010" then -- slt function
 	 o_control <= "111";
 	 
-	 end if;
-
+	end if;
    end if;
    
-   end process aluControl_Behaviour;
-
+end process;
 
 END struct;

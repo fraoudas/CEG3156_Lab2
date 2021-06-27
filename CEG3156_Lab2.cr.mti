@@ -1,4 +1,14 @@
-D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
+D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif {0 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+** Error: D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif(1): near "DEPTH": syntax error
+
+} {4.0 5.0} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif {0 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+** Error: D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif(1): near "DEPTH": syntax error
+
+} {4.0 5.0} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -38,13 +48,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity enARdFF
 -- Compiling architecture rtl of enARdFF
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitALU.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitALU.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitALU.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitALU.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity eightBitALU
 -- Compiling architecture struct of eightBitALU
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluControl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity aluControl
+-- Compiling architecture struct of aluControl
 
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instructionMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instructionMemory.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
@@ -63,14 +81,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package LPM_COMPONENTS
 -- Compiling entity dataMemory
 -- Compiling architecture struct of dataMemory
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/aluControl.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\aluControl.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity aluControl
--- Compiling architecture struct of aluControl
 
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
@@ -104,13 +114,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity eightBitAdder
 -- Compiling architecture struct of eightBitAdder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitComparator.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity eightBitComparator
 -- Compiling architecture rtl of eightBitComparator
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/controlUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\controlUnit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controlUnit
+-- Compiling architecture struct of controlUnit
 
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitComparator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
@@ -119,10 +137,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity oneBitComparator
 -- Compiling architecture rtl of oneBitComparator
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/controlUnit.vhd {0 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\controlUnit.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
-** Error (suppressible): D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\controlUnit.vhd(2): (vcom-1491) Empty source files.
 
 } {} {}}

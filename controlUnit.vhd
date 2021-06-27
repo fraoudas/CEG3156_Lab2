@@ -20,83 +20,55 @@ END controlUnit;
 
 ARCHITECTURE struct OF controlUnit IS
 
-
 BEGIN
 
-controlUnit_behaviour : process is
-    BEGIN
-	regWrite <= '0';
-	
-	if opCode = "000000" then -- r-type instruction
-	regDst <= '1';
-	jump <= '0';
-	branch <= '0';
-	memRead <= '0';
-	memToReg <= '0';
-	aluOp <= "10";
-	memWrite <= '0';
-	aluSrc <= '0';
-	regWrite <= '1' after 10 ns;
-	
-	elsif opCode = "100011" then -- lw instruction
-	regDst <= '0';
-	jump <= '0';
-	branch <= '0';
-	memRead <= '1';
-	memToReg <= '1';
-	aluOp <= "00";
-	memWrite <= '0';
-	aluSrc <= '1';
-	regWrite <= '1' after 10 ns;
-	
-	elsif opCode = "101011" then -- sw instruction
-	regDst <= 'X';
-	jump <= '0';
-	branch <= '0';
-	memRead <= '0';
-	memToReg <= 'X';
-	aluOp <= "00";
-	memWrite <= '1';
-	aluSrc <= '1';
-	regWrite <= '0';
-	
-	elsif opCode = "000100" then -- beq instruction
-	regDst <= 'X';
-	jump <= '0';
-	branch <= '1' after 2 ns;
-	memRead <= '0';
-	memToReg <= 'X';
-	aluOp <= "01";
-	memWrite <= '0';
-	aluSrc <= '0';
-	regWrite <= '0';
-	
-	elsif opCode = "000010" then -- jump instruction
-	regDst <= 'X';
-	jump <= '1';
-	branch <= '0';
-	memRead <= '0';
-	memToReg <= 'X';
-	aluOp <= "00";
-	memWrite <= '0';
-	aluSrc <= '0';
-	regWrite <= '0';
-	
-	else  
-	regDst <= '0';
-	jump <= '0';
-	branch <= '0';
-	memRead <= '0';
-	memToReg <= '0';
-	aluOp <= "00";
-	memWrite <= '0';
-	aluSrc <= '0';
-	regWrite <= '0';
-	
-	end if;
-	
-	end process controlUnit_behaviour;
-	
+PROCESS(opCode)
+BEGIN
+	IF (opCode = "000000") THEN -- r-type instruction
+		regDst <= '1';
+		jump <= '0';
+		branch <= '0';
+		memRead <= '0';
+		memToReg <= '0';
+		aluOp <= "10";
+		memWrite <= '0';
+		aluSrc <= '0';
+		regWrite <= '1';
+	ELSIF (opCode = "100011") THEN	--lw instruction
+		regDst <= '0';
+		jump <= '0';
+		branch <= '0';
+		memRead <= '1';
+		memToReg <= '1';
+		aluOp <= "00";
+		memWrite <= '0';
+		aluSrc <= '1';
+		regWrite <= '1';
+	ELSIF (opCode = "101011") THEN	--sw instruction
+		jump <= '0';
+		branch <= '0';
+		memRead <= '0';
+		aluOp <= "00";
+		memWrite <= '1';
+		aluSrc <= '1';
+		regWrite <= '0';
+	ELSIF (opCode = "000100") THEN -- beq instruction
+		jump <= '0';
+		branch <= '1';
+		memRead <= '0';
+		aluOp <= "01";
+		memWrite <= '0';
+		aluSrc <= '0';
+		regWrite <= '0';
+	ELSIF (opCode = "000010") THEN
+		jump <= '1';
+		aluSrc <= '0';
+		regWrite <= '0';
+		memRead <= '0';
+		memWrite <= '0';
+		aluOp <= "00";
+	END IF;
+END PROCESS;
 	
 END struct;
 	

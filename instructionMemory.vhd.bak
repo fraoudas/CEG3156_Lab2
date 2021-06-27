@@ -41,8 +41,7 @@ instructionMem: LPM_ROM
 	GENERIC MAP (		LPM_WIDTH => 32,
 				LPM_WIDTHAD => 8,
 				LPM_NUMWORDS => 256,
-				LPM_FILE => instructionFile,
-				LPM_TYPE => "LPM_ROM")
+				LPM_FILE => instructionFile)
 	PORT MAP (		ADDRESS => i_addr,
 				INCLOCK => i_inclock,
 				OUTCLOCK => i_outclock,
