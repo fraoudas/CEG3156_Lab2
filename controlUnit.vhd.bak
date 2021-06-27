@@ -5,12 +5,12 @@ entity controlUnit is
 
       Port (
 	     opCode : in std_logic_vector(5 downto 0);
-         aluOp : out std_logic_vector(1 downto 0);
+             aluOp : out std_logic_vector(1 downto 0);
 	     regDst : out std_logic;
-         jump : out std_logic;
+             jump : out std_logic;
 	     branch : out std_logic;
-      	 memRead : out std_logic;
-         memToReg : out std_logic;
+      	     memRead : out std_logic;
+             memToReg : out std_logic;
 	     memWrite : out std_logic;
 	     aluSrc : out std_logic;
 	     regWrite: out std_logic
@@ -61,7 +61,7 @@ controlUnit_behaviour : process is
 	regWrite <= '0';
 	
 	elsif opCode = "000100" then -- beq instruction
-	regDst <= 'X';
+	regDst <= 'x';
 	jump <= '0';
 	branch <= '1' after 2 ns;
 	memRead <= '0';
