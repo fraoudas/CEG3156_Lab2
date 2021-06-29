@@ -13,7 +13,7 @@ ARCHITECTURE struct OF aluControl IS
 
 BEGIN
 
-PROCESS(i_aluOp)
+PROCESS(i_aluOp, i_func)
 BEGIN
 	
 

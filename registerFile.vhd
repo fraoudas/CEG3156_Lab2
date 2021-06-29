@@ -4,6 +4,7 @@ USE ieee.std_logic_1164.ALL;
 ENTITY registerFile IS
 	PORT (
 		i_gReset		: IN 	STD_LOGIC;
+		i_clock			: IN	STD_LOGIC;
 		i_regWrite		: IN	STD_LOGIC;
 		i_readRegister1 	: IN 	STD_LOGIC_VECTOR(2 downto 0);
 		i_readRegister2 	: IN 	STD_LOGIC_VECTOR(2 downto 0);
@@ -19,6 +20,7 @@ COMPONENT eightBitRegister
 	PORT (
 		i_gReset : IN STD_LOGIC;
 		i_clock : IN STD_LOGIC;
+		i_enable : IN STD_LOGIC;
 		i_A : IN STD_LOGIC_VECTOR(7 downto 0);
 		o_q : OUT STD_LOGIC_VECTOR(7 downto 0));
 END COMPONENT;
@@ -76,49 +78,57 @@ readData2: eightBit8x3MUX
 
 register0: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(0),
+			i_clock => i_clock,
+			i_enable => int_clock(0),
 			i_A => i_writeData,
 			o_q => int_register0);
 
 register1: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(1),
+			i_clock => i_clock,
+			i_enable => int_clock(1),
 			i_A => i_writeData,
 			o_q => int_register1);
 
 register2: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(2),
+			i_clock => i_clock,
+			i_enable => int_clock(2),
 			i_A => i_writeData,
 			o_q => int_register2);
 
 register3: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(3),
+			i_clock => i_clock,
+			i_enable => int_clock(3),
 			i_A => i_writeData,
 			o_q => int_register3);
 
 register4: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(4),
+			i_clock => i_clock,
+			i_enable => int_clock(4),
 			i_A => i_writeData,
 			o_q => int_register4);
 
 register5: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(5),
+			i_clock => i_clock,
+			i_enable => int_clock(5),
 			i_A => i_writeData,
 			o_q => int_register5);
 
 register6: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(6),
+			i_clock => i_clock,
+			i_enable => int_clock(6),
 			i_A => i_writeData,
 			o_q => int_register6);
 
 register7: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(7),
+			i_clock => i_clock,
+			i_enable => int_clock(7),
 			i_A => i_writeData,
 			o_q => int_register7);
 

@@ -63,7 +63,7 @@ COMPONENT eightBit2x1MUX
 END COMPONENT;
 
 COMPONENT registerFile
-	PORT (
+	PORT (	i_clock			: IN	STD_LOGIC;
 		i_gReset		: IN 	STD_LOGIC;
 		i_regWrite		: IN	STD_LOGIC;
 		i_readRegister1 	: IN 	STD_LOGIC_VECTOR(2 downto 0);
@@ -84,7 +84,7 @@ END COMPONENT;
 
 COMPONENT eightBitRegister
 	PORT (
-		i_gReset, i_clock : IN STD_LOGIC;
+		i_gReset, i_clock, i_enable : IN STD_LOGIC;
 		i_A : IN STD_LOGIC_VECTOR(7 downto 0);
 		o_q : OUT STD_LOGIC_VECTOR(7 downto 0));
 END COMPONENT;
@@ -111,11 +111,25 @@ COMPONENT aluControl
 		o_control 	: OUT 	STD_LOGIC_VECTOR(2 downto 0)
 		);
 END COMPONENT;
-		
+
+--PC Signals
 SIGNAL int_PCin, int_PCout : STD_LOGIC_VECTOR(7 downto 0);
+
+--Register File Signals
+SIGNAL int_regDst, int_regWrite : STD_LOGIC;
+SIGNAL int_readRegister1, int_readRegister2 : STD_LOGIC_VECTOR(2 downto 0);
+SIGNAL int_writeRt, int_writeRd : STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL int_writeRegister, int_writeData : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_readData1, int_readData2 : STD_LOGIC_VECTOR(7 downto 0);
-SIGNAL int_writeData : STD_LOGIC_VECTOR(7 downto 0);
-SIGNAL int_regDst, int_jump, int_memRead, int_memToReg, int_aluSrc, int_regWrite : STD_LOGIC;
+
+--Branch and Jump Instruction Signals
+
+SIGNAL int_zero : STD_LOGIC;
+SIGNAL int_branch, int_jump, int_beq : STD_LOGIC;
+SIGNAL int_PCnext : STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL int_jumpAddress, int_PCBranchAddress, int_extendedShiftedAddress, int_extendedAddress, int_nextAddress : STD_LOGIC_VECTOR(7 downto 0);
+
+SIGNAL int_memRead, int_memToReg, int_aluSrc : STD_LOGIC;
 SIGNAL int_aluControl : STD_LOGIC_VECTOR(2 downto 0);
 SIGNAL int_aluOp : STD_LOGIC_VECTOR(1 downto 0);
 SIGNAL int_aluRes : STD_LOGIC_VECTOR(7 downto 0);
@@ -123,20 +137,22 @@ SIGNAL int_muxOther : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_instruction : STD_LOGIC_VECTOR(31 downto 0);
 
 SIGNAL int_PCCout : STD_LOGIC;
-SIGNAL int_PCnext : STD_LOGIC_VECTOR(7 downto 0);
 
-SIGNAL int_extendedShiftedAddress, int_extendedAddress, int_nextAddress, int_jumpAddress, int_PCBranchAddress : STD_LOGIC_VECTOR(7 downto 0);
-SIGNAL int_beq, int_branch, int_zero, int_memWrite : STD_LOGIC;
+SIGNAL int_memWrite : STD_LOGIC;
 
 SIGNAL int_PCBranchCout : STD_LOGIC;
 
-SIGNAL int_aluInputB, int_readDataMemory, int_writeRegister : STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL int_aluInputB, int_readDataMemory : STD_LOGIC_VECTOR(7 downto 0);
 
-SIGNAL int_writeRegA, int_writeRegB : STD_LOGIC_VECTOR(7 downto 0);
+
 
 SIGNAL int_muxOut : STD_LOGIC_VECTOR(7 downto 0);
 
+
+
 BEGIN
+int_readRegister1 <= int_instruction(23 downto 21);
+int_readRegister2 <= int_instruction(18 downto 16);
 	
 int_muxOther <= '0' & int_regDst & int_jump & int_memRead & int_memToReg & int_aluOp(1) & int_aluOp(0) & int_aluSrc;
 
@@ -155,6 +171,7 @@ ioMUX: eightBit8x3MUX
 PC: eightBitRegister
 	PORT MAP (	i_gReset => GReset,
 			i_clock => GClock,
+			i_enable => '1',
 			i_A => int_PCin,
 			o_q => int_PCout);
 
@@ -193,26 +210,27 @@ branchOrJump: eightBit2x1MUX
 
 int_beq <= int_branch AND int_zero;
 int_jumpAddress <= int_PCnext(7) &  int_instruction(4 downto 0) & '0' & '0';
-int_extendedAddress <= int_instruction(3) & int_instruction(3) & int_instruction(3) & int_instruction(3) & int_instruction(3 downto 0);
+int_extendedAddress <= int_instruction(6) & int_instruction(6 downto 0);
 int_extendedShiftedAddress <= int_extendedAddress(5 downto 0) & '0' & '0';
 
 registers: registerFile
-	PORT MAP (	 i_gReset => GReset,
+	PORT MAP (	 i_clock => GClock,
+			 i_gReset => GReset,
 			 i_regWrite => int_regWrite,
-			 i_readRegister1 => int_instruction(23 downto 21),
-			 i_readRegister2 => int_instruction(18 downto 16),
+			 i_readRegister1 => int_readRegister1,
+			 i_readRegister2 => int_readRegister2,
 			 i_writeRegister => int_writeRegister(2 downto 0),
 			 i_writeData => int_writeData,
 			 o_readData1 => int_readData1,
 			 o_readData2 => int_readData2);
 
-int_writeRegA <= '0' & '0' & '0' & '0' & '0' & int_instruction(18 downto 16);
-int_writeRegB <= '0' & '0' & '0' & '0' & '0' & int_instruction(13 downto 11);
+int_writeRt <= '0' & '0' & '0' & '0' & '0' & int_instruction(18 downto 16);
+int_writeRd <= '0' & '0' & '0' & '0' & '0' & int_instruction(13 downto 11);
 
 writeRegMUX: eightBit2x1MUX
 	PORT MAP (	i_sel => int_regDst,
-			i_A => int_writeRegA,
-			i_B => int_writeRegB,
+			i_A => int_writeRt,
+			i_B => int_writeRd,
 			o_q => int_writeRegister);
 
 readData2MUX: eightBit2x1MUX

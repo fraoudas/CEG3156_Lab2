@@ -23,7 +23,7 @@ BEGIN
   elsif i_aluOp = "01" then -- subtract function sw
      o_control <= "110";
 	 
-  elsif i_aluOp(1) = '1' then -- r-type insturction 
+  elsif i_aluOp = "10" then -- r-type insturction 
      if i_func(3 downto 0) = "0000"  then -- add function
 	 o_control <= "010";
 	 
@@ -40,7 +40,6 @@ BEGIN
 	 o_control <= "111";
 	 
 	end if;
-
    end if;
    
 end process;

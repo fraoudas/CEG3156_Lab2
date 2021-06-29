@@ -4,6 +4,7 @@ USE ieee.std_logic_1164.ALL;
 ENTITY eightBitRegister IS
 	PORT ( 
 		i_gReset, i_clock : IN STD_LOGIC;
+		i_enable : IN STD_LOGIC;
 		i_A : IN STD_LOGIC_VECTOR(7 downto 0);
 		o_q : OUT STD_LOGIC_VECTOR(7 downto 0));
 END eightBitRegister;
@@ -27,56 +28,56 @@ bit7: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(7),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(7));
 
 bit6: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(6),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(6));
 
 bit5: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(5),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(5));
 
 bit4: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(4),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(4));
 
 bit3: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(3),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(3));
 
 bit2: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(2),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(2));
 
 bit1: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(1),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(1));
 
 bit0: enardFF
 	PORT MAP (	i_resetBar => i_gReset,
 			i_clock => i_clock,
 			i_d => i_A(0),
-			i_enable => '1',
+			i_enable => i_enable,
 			o_q => int_q(0));
 
 	--Output driver

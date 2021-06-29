@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.ALL;
 
 entity controlUnit is 
 
-      Port (
+      Port ( 
 	     opCode : in std_logic_vector(5 downto 0);
          aluOp : out std_logic_vector(1 downto 0);
 	     regDst : out std_logic;
@@ -34,6 +34,7 @@ BEGIN
 		memWrite <= '0';
 		aluSrc <= '0';
 		regWrite <= '1';
+		
 	ELSIF (opCode = "100011") THEN	--lw instruction
 		regDst <= '0';
 		jump <= '0';
@@ -44,6 +45,7 @@ BEGIN
 		memWrite <= '0';
 		aluSrc <= '1';
 		regWrite <= '1';
+		
 	ELSIF (opCode = "101011") THEN	--sw instruction
 		jump <= '0';
 		branch <= '0';
@@ -52,6 +54,7 @@ BEGIN
 		memWrite <= '1';
 		aluSrc <= '1';
 		regWrite <= '0';
+		
 	ELSIF (opCode = "000100") THEN -- beq instruction
 		jump <= '0';
 		branch <= '1';
@@ -59,11 +62,12 @@ BEGIN
 		aluOp <= "01";
 		memWrite <= '0';
 		aluSrc <= '0';
-		regWrite <= '0';
-	ELSIF (opCode = "000010") THEN
+		regWrite <= '1';
+		
+	ELSIF (opCode = "000010") THEN -- jmp instruction
 		jump <= '1';
 		aluSrc <= '0';
-		regWrite <= '0';
+		regWrite <= '1';
 		memRead <= '0';
 		memWrite <= '0';
 		aluOp <= "00";

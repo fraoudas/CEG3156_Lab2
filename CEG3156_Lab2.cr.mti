@@ -1,12 +1,12 @@
-D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif {0 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif
+D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif {0 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\instruction.mif}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
-** Error: D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/instruction.mif(1): near "DEPTH": syntax error
+** Error: D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\instruction.mif(1): near "DEPTH": syntax error
 
-} {4.0 5.0} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif {0 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif
+} {4.0 5.0} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif {0 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\data.mif}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
-** Error: D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/data.mif(1): near "DEPTH": syntax error
+** Error: D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\data.mif(1): near "DEPTH": syntax error
 
 } {4.0 5.0} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/oneBitFullAdder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
@@ -16,7 +16,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity oneBitFullAdder
 -- Compiling architecture struct of oneBitFullAdder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/registerFile.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\registerFile.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -40,7 +40,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity eightBitDecoder
 -- Compiling architecture struct of eightBitDecoder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enardFF.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\enardFF.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -82,6 +82,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity dataMemory
 -- Compiling architecture struct of dataMemory
 
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitRegister.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eightBitRegister
+-- Compiling architecture rtl of eightBitRegister
+
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBit8x3MUX.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
@@ -89,14 +97,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity eightBit8x3MUX
 -- Compiling architecture struct of eightBit8x3MUX
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitRegister.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity eightBitRegister
--- Compiling architecture rtl of eightBitRegister
 
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/enasdFF.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
@@ -106,14 +106,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity enasdFF
 -- Compiling architecture rtl of enasdFF
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity eightBitAdder
--- Compiling architecture struct of eightBitAdder
-
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitComparator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
@@ -121,6 +113,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity eightBitComparator
 -- Compiling architecture rtl of eightBitComparator
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/eightBitAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\eightBitAdder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eightBitAdder
+-- Compiling architecture struct of eightBitAdder
 
 } {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab2/controlUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab2\controlUnit.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021

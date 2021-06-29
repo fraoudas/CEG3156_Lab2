@@ -4,6 +4,7 @@ USE ieee.std_logic_1164.ALL;
 ENTITY registerFile IS
 	PORT (
 		i_gReset		: IN 	STD_LOGIC;
+		i_clock			: IN	STD_LOGIC;
 		i_regWrite		: IN	STD_LOGIC;
 		i_readRegister1 	: IN 	STD_LOGIC_VECTOR(2 downto 0);
 		i_readRegister2 	: IN 	STD_LOGIC_VECTOR(2 downto 0);
@@ -19,6 +20,7 @@ COMPONENT eightBitRegister
 	PORT (
 		i_gReset : IN STD_LOGIC;
 		i_clock : IN STD_LOGIC;
+		i_enable : IN STD_LOGIC;
 		i_A : IN STD_LOGIC_VECTOR(7 downto 0);
 		o_q : OUT STD_LOGIC_VECTOR(7 downto 0));
 END COMPONENT;
@@ -41,8 +43,8 @@ SIGNAL int_readData1, int_readData2 : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_writeRegister : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_clock : STD_LOGIC_VECTOR(7 downto 0);
 
-
 BEGIN
+
 int_clock <= (i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite) AND int_writeRegister;
 
 
@@ -76,19 +78,22 @@ readData2: eightBit8x3MUX
 
 register0: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(0),
+			i_clock => i_clock,
+			i_enable => int_clock(0),
 			i_A => i_writeData,
 			o_q => int_register0);
 
 register1: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(1),
+			i_clock => i_clock,
+			i_enable => int_clock(1),
 			i_A => i_writeData,
 			o_q => int_register1);
 
 register2: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
-			i_clock => int_clock(2),
+			i_clock => i_clock,
+			i_enable => int_clock(2),
 			i_A => i_writeData,
 			o_q => int_register2);
 
