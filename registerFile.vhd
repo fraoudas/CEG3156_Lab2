@@ -41,11 +41,11 @@ END COMPONENT;
 SIGNAL int_register0, int_register1, int_register2, int_register3, int_register4, int_register5, int_register6, int_register7 : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_readData1, int_readData2 : STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL int_writeRegister : STD_LOGIC_VECTOR(7 downto 0);
-SIGNAL int_clock : STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL int_enable : STD_LOGIC_VECTOR(7 downto 0);
 
 BEGIN
 
-int_clock <= (i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite) AND int_writeRegister;
+int_enable <= (i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite & i_regWrite) AND int_writeRegister;
 
 
 decoder: eightBitDecoder
@@ -79,56 +79,56 @@ readData2: eightBit8x3MUX
 register0: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(0),
+			i_enable => int_enable(0),
 			i_A => i_writeData,
 			o_q => int_register0);
 
 register1: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(1),
+			i_enable => int_enable(1),
 			i_A => i_writeData,
 			o_q => int_register1);
 
 register2: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(2),
+			i_enable => int_enable(2),
 			i_A => i_writeData,
 			o_q => int_register2);
 
 register3: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(3),
+			i_enable => int_enable(3),
 			i_A => i_writeData,
 			o_q => int_register3);
 
 register4: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(4),
+			i_enable => int_enable(4),
 			i_A => i_writeData,
 			o_q => int_register4);
 
 register5: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(5),
+			i_enable => int_enable(5),
 			i_A => i_writeData,
 			o_q => int_register5);
 
 register6: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(6),
+			i_enable => int_enable(6),
 			i_A => i_writeData,
 			o_q => int_register6);
 
 register7: eightBitRegister
 	PORT MAP (	i_gReset => i_gReset,
 			i_clock => i_clock,
-			i_enable => int_clock(7),
+			i_enable => int_enable(7),
 			i_A => i_writeData,
 			o_q => int_register7);
 

@@ -31,13 +31,6 @@ COMPONENT eightBit8x3MUX
 		o_q						: OUT	STD_LOGIC_VECTOR(7 downto 0));
 END COMPONENT;
 
-COMPONENT eightBitRegsiter
-	PORT (
-		i_gReset, i_clock 	: IN  STD_LOGIC;
-		i_A 			: IN  STD_LOGIC_VECTOR(7 downto 0);
-		o_q 			: OUT STD_LOGIC_VECTOR(7 downto 0));
-END COMPONENT;
-
 COMPONENT instructionMemory
 	PORT (
 		i_inclock, i_outclock 	: IN  STD_LOGIC;
@@ -91,17 +84,9 @@ END COMPONENT;
 
 COMPONENT controlUnit
 	PORT (	
-	     opCode : in std_logic_vector(5 downto 0);
-         aluOp : out std_logic_vector(1 downto 0);
-	     regDst : out std_logic;
-         jump : out std_logic;
-	     branch : out std_logic;
-      	 memRead : out std_logic;
-         memToReg : out std_logic;
-	     memWrite : out std_logic;
-	     aluSrc : out std_logic;
-	     regWrite: out std_logic
-	     );
+	     	i_Opcode								  : IN	STD_LOGIC_VECTOR(5 downto 0);
+		o_ALUOp									  : OUT	STD_LOGIC_VECTOR(1 downto 0);
+		o_RegDst, o_Jump, o_Branch, o_MemRead, o_MemToReg, o_MemWrite, o_RegWrite, o_ALUSrc : OUT STD_LOGIC); 
 END COMPONENT;
 
 COMPONENT aluControl
@@ -240,16 +225,16 @@ readData2MUX: eightBit2x1MUX
 			o_q => int_aluInputB);
 
 control: controlUnit
-	PORT MAP (	opCode => int_instruction(31 downto 26),
-			aluOp => int_aluOp,
-			regDst => int_regDst,
-			jump => int_jump,
-			branch => int_branch,
-			memRead => int_memRead,
-			memToReg => int_memToReg,
-			memWrite => int_memWrite,
-			aluSrc => int_aluSrc,
-			regWrite => int_regWrite);
+	PORT MAP (	i_Opcode => int_instruction(31 downto 26),
+			o_ALUOp => int_aluOp,
+			o_RegDst => int_regDst,
+			o_Jump => int_jump,
+			o_Branch => int_branch,
+			o_MemRead => int_memRead,
+			o_MemToReg => int_memToReg,
+			o_MemWrite => int_memWrite,
+			o_ALUSrc => int_aluSrc,
+			o_RegWrite => int_regWrite);
 
 alucontrolunit: aluControl
 	PORT MAP (	i_func => int_instruction(5 downto 0),
